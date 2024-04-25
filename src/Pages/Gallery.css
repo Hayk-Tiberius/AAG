@@ -1,0 +1,52 @@
+body {
+    background-color: #9caea0;
+}
+
+.Title__Photo {
+    width: 210vh;
+}
+
+.Gallery__firstTitle {
+    text-transform: uppercase;
+    font-family: Evalter;
+    text-align: center;
+    color:#f3f3f3;
+    font-size: 12vh;
+}
+
+.Gallery__firstTitle span {
+    word-break: break-word;
+    display: block;
+    position: relative;
+}
+
+.Gallery__firstTitle::after {
+    position: absolute;
+    content: '';
+    bottom: 185px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    background-color: #f3f3f3;
+    transition: 0.7s linear 0s;
+    height: 15px;
+}
+
+.Gallery__firstTitle:hover::after {
+    width: 45%;
+}
+
+.Artist__column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    width: max-content;
+    padding: 60px 150px;
+    
+}
+
+.Artist__column span {
+    color: #f3f3f3;
+    font-size: 5vh;
+    font-weight: bold;
+}

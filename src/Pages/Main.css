@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Kelvinch;
+    src: url(/src/content/fonts/Kelvinch.otf);
+}
+
+@font-face {
+    font-family: Bukyvede;
+    src: url(/src/content/fonts/Bukyvede.ttf);
+}
+
+@font-face {
+    font-family: Getboreg;
+    src: url(/src/content/fonts/getboregtrialonly-2ozo3.ttf);
+}
+
+@font-face {
+    font-family: Evalter;
+    src: url(/src/content/fonts/Evalter.ttf);
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    
+}
+
+.Main_video_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    object-fit: cover;
+}
+
+.Main_video {
+    position: relative;
+    min-height: 112vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Main_video_text {
+    padding: 50px 15px;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Main_video_text_title {
+    font-family: Evalter;
+    font-size: 17vh;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color:#f3f3f3;
+}
+
+.Main_video_text_text {
+    font-family: Evalter;
+    font-size: 13vh;
+    color:#f3f3f3;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.Main_menu {
+    color: #f3f3f3;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    top: 27px;
+	right: 1px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 29px;
+    font-family: Kelvinch;
+    word-spacing: 20px;
+    font-weight: 400;
+}
+
+
+.Main_menu span {
+    margin-right: 60px; 
+    position: relative;
+}
+
+.Main_menu span::after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 0;
+    background-color: #f3f3f3;
+    transition: 0.4s linear 0s;
+}
+
+.Main_menu span:hover::after {
+    width: 100px;
+}
