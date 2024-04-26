@@ -24,14 +24,18 @@ const Gallery = () => {
                     <span>Albert Bierstadt</span>
                 </div>
                 </Link>
+                <Link to="/Frederick.jsx">  
                 <div className="Artist_Frederick">
                     <img src={Frederick} alt="Frederick_Church" width="400px" height="500px" />
                     <span>Frederick Church</span>
                 </div>
+                </Link>
+                <Link to="/Thomas.jsx">  
                 <div className="Artist_Thomas">
                     <img src={Thomas} alt="Thomas_Cole" width="400px" height="500px"/>
                     <span>Thomas Cole</span>
                 </div>
+                </Link>
             </div>    
     </div>
     </>

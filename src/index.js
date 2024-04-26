@@ -6,6 +6,8 @@ import Gallery from './Pages/Gallery.jsx';
 import Artists from './Pages/Artists.jsx';
 import Albert from './Pages/Gallery/Albert.jsx';
 import LogIn from './Pages/LogIn.jsx';
+import Frederick from './Pages/Gallery/Frederick.jsx';
+import Thomas from './Pages/Gallery/Thomas.jsx';
 
 const App = () => (
   <Router>
@@ -15,6 +17,8 @@ const App = () => (
       <Route path="/Artists" element={<Artists />} />
       <Route path="/LogIn" element={<LogIn />} />
       <Route path="/Albert.jsx" element={<Albert />} />
+      <Route path="/Frederick.jsx" element={<Frederick />} />
+      <Route path="/Thomas.jsx" element={<Thomas />} />
     </Routes>
   </Router>
 );
