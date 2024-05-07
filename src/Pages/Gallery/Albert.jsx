@@ -57,7 +57,7 @@ const Albert = () => {
                 <div className='frame frame'>
                     <div className=' frame__content'>
                         <div className='frame-media frame-media_left'>
-                            <img src={Albert1} alt="ure"/>    
+                            <img src={require('../../content/img/Albert_Birshtadt/Albert1.jpg')} alt="ure"/>    
                             <div className='picture_Title'>
                                 <h3>Albert Bierstadt</h3>
                                 American landscape

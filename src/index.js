@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './Pages/Main.jsx';
 import Gallery from './Pages/Gallery.jsx';
-import Artists from './Pages/Artists.jsx';
+import Artists from './Pages/Artists/Artists.jsx';
 import Albert from './Pages/Gallery/Albert.jsx';
-import LogIn from './Pages/LogIn.jsx';
+import LogIn from './Pages/LogIn/LogIn.jsx';
 import Frederick from './Pages/Gallery/Frederick.jsx';
 import Thomas from './Pages/Gallery/Thomas.jsx';
 
