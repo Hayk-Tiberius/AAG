@@ -1,3 +1,4 @@
+import React from "react"
 import "../Pages/Main.css"
 import Video1 from '../content/video/mainVideo.webm'
 import Video2 from '../content/video/mainVideo.mp4'

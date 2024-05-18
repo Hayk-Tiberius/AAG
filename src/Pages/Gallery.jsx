@@ -1,3 +1,4 @@
+import React from "react"
 import "../Pages/Gallery.css"
 import { Link } from 'react-router-dom'
 import Example1 from "../../src/content/img/Gallery/Example1.jpg"

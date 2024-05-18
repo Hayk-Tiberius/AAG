@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import "../Gallery/Albert.css"
-import Albert1 from "../../content/img/Albert_Birshtadt/Albert1.jpg"
+
 import Albert2 from "../../content/img/Albert_Birshtadt/Albert2.jpg"
 import Albert3 from "../../content/img/Albert_Birshtadt/Albert3.jpg"
 import Albert4 from "../../content/img/Albert_Birshtadt/Albert4.jpg"
