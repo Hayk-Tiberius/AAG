@@ -1,3 +1,4 @@
+import React from "react"
 import { useState } from "react";
 
 const Form = ({title, handleClick}) => {
@@ -13,13 +14,13 @@ const Form = ({title, handleClick}) => {
                 placeholder="email"
             />
             <input
-                type="email"
-                value={email}
+                type="password"
+                value={pass}
                 onChange={(e) => setPass(e.target.value)}
                 placeholder="password"
             />
         <button
-            onClick={handleClick}
+            onClick={() => handleClick(email,pass)}
         >
             {title}
         </button>
