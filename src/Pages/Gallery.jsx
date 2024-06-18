@@ -16,7 +16,6 @@ const Gallery = () => {
         </div>    
         <div className="Gallery__firstTitle">Hudson River 
             <span>School</span>
-          
         </div>  
             <div className="Artist__column">
                 <Link to="/Albert.jsx">   

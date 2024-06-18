@@ -5,7 +5,6 @@ import Video2 from '../content/video/mainVideo.mp4'
 import { Link } from 'react-router-dom'
 
 const Main = () => {
- 
   return (
     <div className = "Main_content">
       <div className = "Main_menu">
@@ -28,7 +27,6 @@ const Main = () => {
       </div>
     </div>
       
-           
   )
   
 }

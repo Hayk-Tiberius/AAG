@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import createRoot from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/LogIn.index.js';
@@ -31,7 +31,7 @@ const App = () => (
   </Router>
 );
 
-ReactDOM.render(
+createRoot.render(
   <React.StrictMode>
     <Provider store={store}>
     <App />
