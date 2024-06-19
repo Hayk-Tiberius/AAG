@@ -2,6 +2,8 @@ import React from "react"
 import { useState, useEffect } from "react";
 import artistData from "./artist-data.json"
 
+import ArtistList from "./ArtistList.jsx";
+
 const filterArts = (searchText, listOfArts) => {
     if (!searchText) {
         return listOfArts
@@ -39,10 +41,8 @@ const Artists = () => {
                     value={searchTerm}
                 />
                 <ul>
-                    {artList.map((car,index) => {
-                        return <li key={index} className=""> </li>
-                    }
-                )}
+                    <ArtistList artList={artList}/>
+                
                 </ul>
             </div>
         </div>        
