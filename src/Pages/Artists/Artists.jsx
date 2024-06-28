@@ -1,18 +1,18 @@
 import React from "react"
 import { useState, useEffect } from "react";
-import artistData from "./artist-data.json"
+import data from "./artist-data.json"
 
 import ArtistList from "./ArtistList.jsx";
 
-const filterArts = (searchText, listOfArts) => {
+
+const filterArts = (searchText) => {
     if (!searchText) {
-        return listOfArts
+        return data
     }
-    return listOfArts.filter(({ artist_name }) =>
+    return data.filter(({ artist_name }) =>
         artist_name.toLowerCase().includes(searchText.toLowerCase())
     )
 }
-const data =  artistData
 
 const Artists = () => {
 
@@ -21,7 +21,7 @@ const Artists = () => {
 
     useEffect(() => {
         const Debounce = setTimeout(() => {
-            const filteredArts = filterArts(searchTerm,data)
+            const filteredArts = filterArts(searchTerm)
             setArtList(filteredArts) 
         },300)
 
@@ -42,7 +42,6 @@ const Artists = () => {
                 />
                 <ul>
                     <ArtistList artList={artList}/>
-                
                 </ul>
             </div>
         </div>        

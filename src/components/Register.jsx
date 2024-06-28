@@ -31,9 +31,7 @@ const Register = () => {
             title="sign in"
             handleClick={handleRegister}
         />
-        <Link to="/LogIn.jsx">
-            Log In
-        </Link>
+       
         </div>
     )
 }
